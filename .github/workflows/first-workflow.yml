@@ -6,7 +6,11 @@ jobs:
     first-job:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout repo
+              uses: actions/checkout@v4
             - name: Welcome Message
               run: echo "Initiating first-job"
             - name: List files in pwd
               run: ls -lrta
+            - name: Print Readme.md
+              run: cat README.md
