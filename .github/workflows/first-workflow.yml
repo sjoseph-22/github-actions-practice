@@ -1,0 +1,12 @@
+name: first-workflow
+
+on: push
+
+jobs:
+    first-job:
+        runs-on: ubuntu
+        steps:
+            - name: Welcome Message
+              run: echo "Initiating first-job"
+            - name: List files in pwd
+              run: ls -lrta
